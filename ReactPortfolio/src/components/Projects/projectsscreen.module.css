@@ -2,7 +2,7 @@
 .screenContent {
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  padding: 60px;
 }
 
 /* these containers divide the Projects into two rows */

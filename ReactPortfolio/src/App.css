@@ -1,5 +1,8 @@
-/* make the website's background lightblue */
+/* make the website use a background image of a sky */
 body {
   margin: 0;
-  background-color: #E0EDF6;
+  background-image: url("/background-image.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
