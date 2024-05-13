@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <NavBar setView={setView}/>
+      <NavBar view={view} setView={setView}/>
       { screen }
     </>
   )

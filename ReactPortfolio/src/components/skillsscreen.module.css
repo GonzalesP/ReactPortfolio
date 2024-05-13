@@ -1,8 +1,6 @@
 .screenContent {
   display: flex;
   flex-direction: column;
-  border: 1px black solid;
-  height: 500px;
   padding: 60px;
 }
 
@@ -10,6 +8,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px black solid;
   margin: 20px;
 }

@@ -1,29 +1,52 @@
 .screenContent {
   display: flex;
   flex-direction: row;
-  border: 1px black solid;
-  height: 500px;
+  height: 600px;
 }
 
 .imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px red solid;
-  flex: 5;
+  flex: 1;
 }
 
 .aboutContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px blue solid;
-  flex: 5;
+  flex: 1;
 }
 
 .aboutTextContainer {
   display: flex;
   flex-direction: column;
-  border: 1px green solid;
-  margin: 36px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 32px;
+  margin: 96px;
+  padding: 32px;
+}
+
+@font-face {
+  font-family: Kanit-Regular;
+  src: url(/Kanit-Regular.ttf);
+}
+
+.helloText {
+  font-family: Kanit-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 42px;
+  color: #0057ab;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Kanit-Light;
+  src: url(/Kanit-Light.ttf);
+}
+
+.paragraphText {
+  font-family: Kanit-Light, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin: 0;
 }

@@ -1,4 +1,4 @@
-import ScreenContainer from "./ScreenContainer";
+import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 import Project from "./Project";
 
@@ -6,7 +6,7 @@ import style from "./projectsscreen.module.css";
 
 export default function ProjectsScreen() {
   return (
-    <ScreenContainer>
+    <Screen>
       <ScreenHeader title="My Projects" />
       <div className={style.screenContent}>
         <div className={style.rowContainer}>
@@ -30,23 +30,19 @@ export default function ProjectsScreen() {
             name="Fitnesse"
             description="I created an Android mobile app using React Native and
               Expo. This app provides a set of meal plans and workout routines
-              that users can follow in order to improve their physical fitness.
-              The app also records a history of the user's daily weight changes.
-              Users can also unlock achievements as they continue improving
-              their physical fitness."
+              that users can follow in order to improve their physical fitness."
             link="https://github.com/GonzalesP/Fitnesse"
           />
           <Project
             name="Company Manager Backend API"
-            description="I worked in a team of three students. Our team created
+            description="I worked in a team of three students. We created
               a backend API for managing a company's projects and employees. The
-              API has a microservices architecture and incorporates several
-              backend strategies, including JWT token authentication, password
-              encryption, and caching via Redis."
+              API has a microservices architecture, JWT token authentication,
+              password encryption, and a Redis cache."
             link="https://github.com/GonzalesP/cpsc-449-project"
           />
         </div>
       </div>
-    </ScreenContainer>
+    </Screen>
   );
 }

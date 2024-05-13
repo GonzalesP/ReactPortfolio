@@ -1,22 +1,50 @@
 .navBarContainer {
   display: flex;
-  border: 1px black solid;
   margin: 0;
+  background-color: #1E5793;
+  border-bottom: #002B54 4px solid;
 }
 
 .titleContainer {
-  display: inline-block;
   padding-left: 40px;
   width: 35%;
+}
+
+@font-face {
+  font-family: Kanit-Regular;
+  src: url(/Kanit-Regular.ttf);
+}
+
+.titleText {
+  font-family: Kanit-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 64px;
+  margin: 8px;
+  color: white;
 }
 
 .navButtonContainer {
   flex: 1;
   display: flex;
   justify-content: space-evenly;
-  border: 1px blue solid;
 }
 
-.navButton {
+.navButtonInactive {
+  font-family: Kanit-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
   flex: 1;
+  border: 0px;
+  background-color: #1E5793;
+  font-size: 32px;
+  color: white;
+}
+
+.navButtonActive {
+  font-family: Kanit-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  flex: 1;
+  border: 0px;
+  background-color: #1E5793;
+  font-size: 32px;
+  color: white;
+  text-decoration: underline;
 }

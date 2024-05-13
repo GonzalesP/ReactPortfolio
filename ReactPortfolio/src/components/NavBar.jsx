@@ -1,21 +1,29 @@
 import style from "./navbar.module.css"
 
-export default function NavBar({ setView }) {
-  function updateView(newView) {
-    setView(newView)
-  }
+export default function NavBar({ view, setView }) {
   return (
     <div className={style.navBarContainer}>
       <div className={style.titleContainer}>
-        <h1 className={style.websiteTitle}>Portfolio</h1>
+        <h1 className={style.titleText}>Portfolio</h1>
       </div>
       <div className={style.navButtonContainer}>
-        <button className={style.navButton} onClick={() => updateView("Home")}>Home</button>
-        <button className={style.navButton} onClick={() => updateView("About")}>About</button>
-        <button className={style.navButton} onClick={() => updateView("Skills")}>Skills</button>
-        <button className={style.navButton} onClick={() => updateView("Education")}>Education</button>
-        <button className={style.navButton} onClick={() => updateView("Projects")}>Projects</button>
-        <button className={style.navButton} onClick={() => updateView("Contact")}>Contact</button>
+        <button className={view == "Home" ? style.navButtonActive : style.navButtonInactive}
+          onClick={() => setView("Home")}>Home</button>
+
+        <button className={view == "About" ? style.navButtonActive : style.navButtonInactive}
+          onClick={() => setView("About")}>About</button>
+
+        <button className={view == "Skills" ? style.navButtonActive : style.navButtonInactive}
+          onClick={() => setView("Skills")}>Skills</button>
+
+        <button className={view == "Education" ? style.navButtonActive : style.navButtonInactive}
+          onClick={() => setView("Education")}>Education</button>
+
+        <button className={view == "Projects" ? style.navButtonActive : style.navButtonInactive}
+          onClick={() => setView("Projects")}>Projects</button>
+
+        <button className={view == "Contact" ? style.navButtonActive : style.navButtonInactive}
+          onClick={() => setView("Contact")}>Contact</button>
       </div>
     </div>
   );
