@@ -1,9 +1,11 @@
+/* this div will make the screen render its rows of Projects vertically */
 .screenContent {
   display: flex;
   flex-direction: column;
   padding: 100px;
 }
 
+/* these containers divide the Projects into two rows */
 .rowContainer {
   display: flex;
   justify-content: space-between;

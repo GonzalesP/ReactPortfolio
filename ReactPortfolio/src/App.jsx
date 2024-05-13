@@ -1,20 +1,23 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 
 import NavBar from './components/NavBar';
-import HomeScreen from './components/HomeScreen';
-import AboutScreen from './components/AboutScreen';
-import SkillsScreen from './components/SkillsScreen';
-import EducationScreen from './components/EducationScreen';
-import ProjectsScreen from './components/ProjectsScreen';
-import ContactScreen from './components/ContactScreen';
+import HomeScreen from './components/Home/HomeScreen';
+import AboutScreen from './components/AboutMe/AboutScreen';
+import SkillsScreen from './components/Skills/SkillsScreen';
+import EducationScreen from './components/Education/EducationScreen';
+import ProjectsScreen from './components/Projects/ProjectsScreen';
+import ContactScreen from './components/ContactMe/ContactScreen';
 
+// this is the Root component
 function App() {
+  // this state keeps track of what screen the user wants to view
+  // e.g. view == "Home" means that the Home Screen should be visible
   const [view, setView] = useState("Home")
 
+  // use a conditional component to determine what screen to render in the JSX
   let screen;
+
   if (view == "Home") {
     screen = <HomeScreen />;
   }
@@ -34,6 +37,7 @@ function App() {
     screen = <ContactScreen />;
   }
 
+  // the web page will consist of the Navigation Bar and Screen Content
   return (
     <>
       <NavBar view={view} setView={setView}/>

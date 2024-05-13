@@ -1,3 +1,4 @@
+/* this div creates a white card that places its content in its center */
 .skillContainer {
   display: flex;
   flex-direction: column;
@@ -10,11 +11,13 @@
   padding: 32px;
 }
 
+/* load the Kanit-Regular font */
 @font-face {
   font-family: Kanit-Regular;
   src: url(/Kanit-Regular.ttf);
 }
 
+/* make the skill's name use the Kanit-Regular font */
 .skillText {
   font-family: Kanit-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 36px;

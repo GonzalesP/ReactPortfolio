@@ -1,13 +1,16 @@
+/* place the screen header in the middle of the screen */
 .headerContainer {
   display: flex;
   justify-content: center;
 }
 
+/* load the Kanit-Regular font */
 @font-face {
   font-family: Kanit-Regular;
   src: url(/public/Kanit-Regular.ttf);
 }
 
+/* make the header's text large (and use Kanit-Regular) */
 .headerText {
   font-family: Kanit-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 48px;

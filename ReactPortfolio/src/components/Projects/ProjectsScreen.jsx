@@ -1,14 +1,19 @@
-import Screen from "./Screen";
-import ScreenHeader from "./ScreenHeader";
+import Screen from "../Screen";
+import ScreenHeader from "../ScreenHeader";
 import Project from "./Project";
 
 import style from "./projectsscreen.module.css";
 
+// this component returns the JSX of the Projects Screen
 export default function ProjectsScreen() {
   return (
+    // <Screen> is a wrapper component that distinguishes Screen components
     <Screen>
+      {/* ScreenHeader creates a title for a screen */}
       <ScreenHeader title="My Projects" />
       <div className={style.screenContent}>
+
+        {/* Divide the Project components into two horizontal rows */}
         <div className={style.rowContainer}>
           <Project
             name="Fullerton Overflow"
@@ -25,6 +30,7 @@ export default function ProjectsScreen() {
             link="https://github.com/GonzalesP/cpsc-449-assignment-1"
           />
         </div>
+        
         <div className={style.rowContainer}>
           <Project
             name="Fitnesse"

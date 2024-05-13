@@ -1,12 +1,13 @@
+/* this div will make the screen render its rows of Skills vertically */
 .screenContent {
   display: flex;
   flex-direction: column;
   padding: 60px;
 }
 
+/* these containers divide the Skills into three rows */
 .rowContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 20px;
 }

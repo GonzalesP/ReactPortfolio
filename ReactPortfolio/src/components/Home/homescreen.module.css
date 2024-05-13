@@ -1,16 +1,19 @@
+/* this div allows the screen to be split in two halves horizontally */
 .screenContent {
   display: flex;
   flex-direction: row;
   height: 600px;
 }
 
-.introContainer {
+/* these containers divide the Introduction content from the image */
+.splitContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
 
+/* this is a white card containing all of the Introduction text */
 .introTextContainer {
   display: flex;
   flex-direction: column;
@@ -20,18 +23,13 @@
   padding: 32px;
 }
 
-.imageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
+/* load the Kanit-Regular font */
 @font-face {
   font-family: Kanit-Regular;
   src: url(/Kanit-Regular.ttf);
 }
 
+/* make the "Hello!" text big and blue */
 .helloText {
   font-family: Kanit-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 64px;
@@ -39,12 +37,9 @@
   margin: 0;
 }
 
+/* make the rest of the text smaller than the header */
 .paragraphText {
   font-family: Kanit-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 48px;
   margin: 0;
-}
-
-.profileImage {
-  width: 384px;
 }
