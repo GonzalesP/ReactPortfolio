@@ -1,0 +1,22 @@
+.navBarContainer {
+  display: flex;
+  border: 1px black solid;
+  margin: 0;
+}
+
+.titleContainer {
+  display: inline-block;
+  padding-left: 40px;
+  width: 35%;
+}
+
+.navButtonContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px blue solid;
+}
+
+.navButton {
+  flex: 1;
+}

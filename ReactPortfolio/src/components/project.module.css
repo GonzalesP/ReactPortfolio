@@ -1,0 +1,9 @@
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+  width: 700px;
+  height: 200px;
+}

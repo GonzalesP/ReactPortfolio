@@ -1,0 +1,29 @@
+.screenContent {
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid;
+  height: 500px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+  flex: 5;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px blue solid;
+  flex: 5;
+}
+
+.aboutTextContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px green solid;
+  margin: 36px;
+}
